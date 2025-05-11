@@ -1,7 +1,7 @@
 import { SvgIcon } from '@mui/material';
 import {HomeIcon, BuildingLibraryIcon, EnvelopeIcon, MapIcon} from '@heroicons/react/24/outline'
 
-export let navItems = [
+export const navItems = [
     {
       title: 'Inicio',
       icon: (
@@ -22,6 +22,7 @@ export let navItems = [
           <BuildingLibraryIcon />
         </SvgIcon>
       ),
+      id: 'Municipio',
       dropdown: [],
       role: []
     },

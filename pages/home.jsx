@@ -6,6 +6,7 @@ import { useScrollContext } from "../src/context/ScrollContext";
 import Map from "../src/components/Map/Map";
 import ComunaSlider from "../src/components/ComunaSlider/ComunaSlider";
 import ContactSelect from "../src/components/ContactSelect/ContactSelect";
+import Municipio from "../src/components/Municipio/Municipio";
 
 const Home = () => {
   const { setActiveSection,sectionRefs } = useScrollContext();
@@ -13,6 +14,7 @@ const Home = () => {
   useEffect(() => {
     const sections = [
       { id: "Inicio", ref: sectionRefs.Inicio },
+      { id: "Municipio", ref: sectionRefs.Municipio },
       { id: "Contacto", ref: sectionRefs.Contacto },
       { id: "Mapa", ref: sectionRefs.Mapa },
       { id: "Comuna", ref: sectionRefs.Slider }
@@ -45,15 +47,14 @@ const Home = () => {
   }, [setActiveSection]);
   
   return (
-    <>
     <Box component={'div'} display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
         <Hero id="Inicio" ref={sectionRefs.Inicio}/>
+        <Municipio id="Municipio" ref={sectionRefs.Municipio}/>
         <ContactForm id="Contacto" ref={sectionRefs.Contacto}/>
         <ContactSelect/>
         <Map id="Mapa" ref={sectionRefs.Mapa}/>
         <ComunaSlider id="Slider" ref={sectionRefs.Slider} />
     </Box>
-    </>
   );
 }
 

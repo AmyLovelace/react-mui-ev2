@@ -7,6 +7,7 @@ export const ScrollProvider = ({ children }) => {
 
   const sectionRefs = {
     Inicio: useRef(null),
+    Municipio: useRef(null),
     Contacto: useRef(null),
     Mapa: useRef(null),
     Slider:useRef(null)
