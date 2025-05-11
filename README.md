@@ -52,7 +52,12 @@ El diseño se adapta correctamente a dispositivos móviles y de escritorio.
 
 <!-- ![formulario](./assets/images/formContact.png) -->
 
-<!-- ![preview](./assets/images/giff-to-video.gif) -->
+
+## Vista Previa
+
+<p align="center">
+  <img src="src/assets/images/giff-to-video.gif" alt="Vista previa del rediseño" width="700">
+</p>
 ## Pasos de instalacion
 
 1. Clonar repositorio
