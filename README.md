@@ -54,6 +54,11 @@ El diseño se adapta correctamente a dispositivos móviles y de escritorio.
 <p align="center">
   <img src="src/assets/images/giff-to-video.gif" alt="Vista previa del rediseño" width="700">
 </p>
+
+
+
+## <a href='https://municipalidad-cholchol-front-end.netlify.app'>🌐 Despliegue<a>
+
 ## Pasos de instalacion
 
 1. Clonar repositorio
