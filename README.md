@@ -52,6 +52,7 @@ El diseño se adapta correctamente a dispositivos móviles y de escritorio.
 
 <!-- ![formulario](./assets/images/formContact.png) -->
 
+<!-- ![preview](./assets/images/giff-to-video.gif) -->
 ## Pasos de instalacion
 
 1. Clonar repositorio
