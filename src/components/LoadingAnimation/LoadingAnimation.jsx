@@ -6,8 +6,8 @@ const LoadingAnimation = () => {
     return (
         <Grid height={'100vh'} display={'grid'} sx={{ placeItems: 'center'}}>
             <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
-                <img src="/assets/images/logo-muni-color.png" alt="Loading" className="loading-image" height={100} width={110}/>
-                <img src="/assets/images/loading-anim.gif" alt="Loading" className="loading-gif" height={80} width={150}/>
+                <img src="/assets/logo-muni-color.png" alt="Loading" className="loading-image" height={100} width={110}/>
+                <img src="/assets/loading-anim.gif" alt="Loading" className="loading-gif" height={80} width={150}/>
             </Box>
             
             

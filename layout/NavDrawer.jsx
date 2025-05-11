@@ -37,7 +37,7 @@ export const NavDrawer = ({handleDrawerMobile}) => {
             }}
         >
             <img id='nav-logo' height={100} 
-                src='/assets/images/logo-muni.png'
+                src='/assets/logo-muni.png'
             />
         </Box>
 

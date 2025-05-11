@@ -97,7 +97,7 @@ const HeaderLayout = ({ handleDrawerToggle, TOP_NAV_HEIGHT, mobileOpen, isScroll
             >
 
                 <img id='nav-logo' height={70} 
-                    src={!isScrolled ? '/assets/images/logo-muni-color.png' : '/assets/images/logo-muni.png'}
+                    src={!isScrolled ? '/assets/logo-muni-color.png' : '/assets/logo-muni.png'}
                     
                 />
 
