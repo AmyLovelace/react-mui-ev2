@@ -12,7 +12,7 @@ const Hero = forwardRef((props, ref) => {
         <Box ref={ref} 
             className="hero"
             sx={{
-                backgroundImage: `url('/assets/images/PUENTE1.jpg')`,
+                backgroundImage: `url('/assets/PUENTE1.jpg')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 width: '100vw',
