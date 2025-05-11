@@ -50,6 +50,7 @@ El diseño se adapta correctamente a dispositivos móviles y de escritorio.
 **Framework:** React + Material UI  
 **Patrón de diseño:** Arquitectura basada en componentes  
 
+<!-- ![formulario](./assets/images/formContact.png) -->
 
 ## Pasos de instalacion
 
