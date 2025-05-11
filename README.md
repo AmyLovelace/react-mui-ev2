@@ -50,14 +50,15 @@ El diseño se adapta correctamente a dispositivos móviles y de escritorio.
 **Framework:** React + Material UI  
 **Patrón de diseño:** Arquitectura basada en componentes  
 
-<!-- ![formulario](./assets/images/formContact.png) -->
-
-
-## Vista Previa
-
+## 👁️ Preview
 <p align="center">
   <img src="src/assets/images/giff-to-video.gif" alt="Vista previa del rediseño" width="700">
 </p>
+
+
+
+## <a href='https://municipalidad-cholchol-front-end.netlify.app'>🌐 Despliegue<a>
+
 ## Pasos de instalacion
 
 1. Clonar repositorio
