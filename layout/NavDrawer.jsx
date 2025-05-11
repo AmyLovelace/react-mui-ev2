@@ -4,10 +4,12 @@ import { NavLink } from "react-router-dom";
 import { navItems } from "./Config";
 import { listItemStyle } from "../theme";
 import DropdownListItem from "../src/components/DropdownListItem/DropdownListItem";
+import { useScrollContext } from "../src/context/ScrollContext";
 
 export const NavDrawer = ({handleDrawerMobile}) => {
   // const { loggedUser } = useContext(userContext);
   const [itemList, setItemList] = useState(navItems);
+  const { scrollToSection } = useScrollContext();
 
   return (
 
@@ -58,9 +60,9 @@ export const NavDrawer = ({handleDrawerMobile}) => {
                     <ListItemButton
                       id='nav-item' 
                       component={NavLink}
-                      to={item.path}
+                      //to={item.path}
                       sx={{...listItemStyle}}
-                      onClick={handleDrawerMobile}
+                      onClick={()=>{handleDrawerMobile() ; scrollToSection(item.id);}}
                     >
                       {item.icon}
                       <ListItemText style={{fontSize: '12px'}} key={index} primary={item.title} disableTypography/>

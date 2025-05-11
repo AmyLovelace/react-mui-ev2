@@ -1,19 +1,18 @@
 import { Stack, IconButton, Box, Grid, MenuItem, Typography } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
-import { useState } from 'react';
 import { navItems } from './Config';
 
 import { useMediaQuery, useTheme } from '@mui/material';
+import { useScrollContext } from '../src/context/ScrollContext';
+
 
 const HeaderLayout = ({ handleDrawerToggle, TOP_NAV_HEIGHT, mobileOpen, isScrolled }) => {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+    const { activeSection, setActiveSection } = useScrollContext();
+    const { scrollToSection } = useScrollContext();
 
-    const [selected, setSelected] = useState('Inicio');
-
-    const isSelected = (option) => {
-        return selected === option;
-    }
+    const isSelected = (option) => { return activeSection === option ;}
 
     return (
         <Stack
@@ -68,7 +67,7 @@ const HeaderLayout = ({ handleDrawerToggle, TOP_NAV_HEIGHT, mobileOpen, isScroll
                 <Grid display={'flex'} alignItems={'center'} justifyContent={'center'} gap={2} width={'100%'}>
 
                     {navItems.map((item, index) => (
-                        <MenuItem  key={index} onClick={() => {setSelected(item.title)}}>
+                        <MenuItem  key={index} onClick={() => {setActiveSection(item.title); scrollToSection(item.id);}}>
                             <Typography 
                                 className={isSelected(item.title) ? 'MenuOption selected' : 'MenuOption'} 
                                 variant='subtitle2' color={'neutral.50'}

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Toolbar, Drawer, Box, AppBar, Typography  } from '@mui/material';
 import { NavDrawer } from './NavDrawer';
 import HeaderLayout from './HeaderLayout';
+import Footer from './Footer';
 
 const TOP_NAV_HEIGHT = 100;
 const versionInfo = 'Desarrollo Frontend' 
@@ -30,7 +31,7 @@ export default function Layout({ children }, props) {
   }, []);
 
   const handleDrawerToggle = () => {
-    setDrawerWidth(!mobileOpen ? 240 : 0);
+    setDrawerWidth(!mobileOpen ? '100%' : 0);
     setMobileOpen(!mobileOpen);
   };
 
@@ -38,6 +39,7 @@ export default function Layout({ children }, props) {
     if (mobileOpen === true) {
       setDrawerWidth(0);
       setMobileOpen(false)
+      
     }
     // Se setea la sección seleccionada en el menú
   }
@@ -47,7 +49,7 @@ export default function Layout({ children }, props) {
 
   return (
 
-    <Box className='external-main' sx={{ display: 'flex' }} justifyContent={'center'} minWidth={'100%'} >
+    <Box className='external-main'   sx={{ display: 'flex', flexDirection: 'column' }} justifyContent={'center'} minWidth={'100%'} >
       <AppBar
         style={{ 
           background: isScrolled ? '#074469' : 'rgba(0, 0, 0, 0.28)', 
@@ -130,7 +132,7 @@ export default function Layout({ children }, props) {
         justifyItems={'center'}
 
         sx={{ 
-          p: { xs: 0, sm: 0, md: 3, lg: 3, xl: 5 }, 
+          p: { xs: 0, sm: 0, md: 0, lg: 0, xl: 0 }, 
           mr:{xl:'0px'}, 
           mt: 6
         }}
@@ -142,6 +144,7 @@ export default function Layout({ children }, props) {
 
 
       </Box>
+      <Footer/>
     </Box>
   );
 }

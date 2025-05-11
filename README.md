@@ -18,9 +18,3 @@ npm run dev
 ### TODO
 
 - Crear sección "Municipio"
-- Crear sección "Contacto"
-- Crear formulario de contacto con uso de alertSwal y alertConf
-- Crear Footer e incluir en Layout
-- Modificar navegación del menu "NavDrawer" (Controlar el scroll a la sección correspondiente)
-- Modificar className selected del HeaderLayout (Mover estado setSelected al App.jsx o un contexto)
-- Limpiar dependencias no utilizadas

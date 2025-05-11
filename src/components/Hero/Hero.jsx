@@ -1,15 +1,15 @@
 import './Hero.css';
 import { Box, Button, Container, Grid, Typography } from '@mui/material';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, forwardRef } from 'react';
 import { useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 
-const Hero = () => {
+const Hero = forwardRef((props, ref) => {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
     return (
-        <Box
+        <Box ref={ref} 
             className="hero"
             sx={{
                 backgroundImage: `url('/src/assets/images/PUENTE1.jpg')`,
@@ -37,5 +37,5 @@ const Hero = () => {
             </Container>
         </Box>
     )
-}
+});
 export default Hero;

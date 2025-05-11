@@ -56,14 +56,6 @@ export default function App() {
                 path="/"
                 element={<Layout> <Home/></Layout>}
               />
-              <Route
-                path="/dashboard"
-                element={<Layout><Dashboard/></Layout>}
-              />
-              <Route
-                path="/ruta2"
-                element={<Layout><Page2/></Layout>}
-              />
             </Routes>
       </CssBaseline >
     </>
