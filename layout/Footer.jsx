@@ -1,6 +1,6 @@
 import { Box, Typography, IconButton, Tooltip, Divider } from "@mui/material";
 import { FaReact, FaJs, FaNodeJs,FaGithub, FaYoutube } from "react-icons/fa";
-import { SiMui, SiReactrouter } from "react-icons/si";
+import { SiMui, SiReactrouter,SiVite } from "react-icons/si";
 
 const Footer = () => {
   return (
@@ -112,6 +112,16 @@ const Footer = () => {
         sx={{ color: "white" }}
       >
         <FaGithub />
+      </IconButton>
+    </Tooltip>
+    <Tooltip title="Vite">
+      <IconButton
+        href="https://vite.dev/"
+        target="_blank"
+        rel="noopener"
+        sx={{ color: "white" }}
+      >
+        <SiVite/>
       </IconButton>
     </Tooltip>
   </Box>

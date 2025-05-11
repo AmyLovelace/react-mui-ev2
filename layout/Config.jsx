@@ -48,5 +48,17 @@ export let navItems = [
       id: 'Mapa',
       dropdown: [],
       role: ['admin', 'user']
+    },
+    {
+      title: 'Comuna',
+      icon: (
+        <SvgIcon fontSize="small" sx={{mr:1}}>
+          {/* <ListBulletIcon /> */}
+          <MapIcon />
+        </SvgIcon>
+      ),
+      id: 'Slider',
+      dropdown: [],
+      role: ['admin', 'user']
     }
   ];

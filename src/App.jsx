@@ -13,7 +13,7 @@ import { alertSwal, alertConf } from '../utils/alerts.js';
 import LoadingAnimation from './components/LoadingAnimation/LoadingAnimation.jsx';
 
 export default function App() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     // Este efecto simula un app loader
@@ -35,7 +35,7 @@ export default function App() {
       // }
       // );
       
-    }, 90);
+    }, 3000);
   }
   , []);
 

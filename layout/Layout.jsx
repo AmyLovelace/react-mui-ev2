@@ -39,13 +39,11 @@ export default function Layout({ children }, props) {
     if (mobileOpen === true) {
       setDrawerWidth(0);
       setMobileOpen(false)
-      
+
     }
-    // Se setea la sección seleccionada en el menú
   }
 
 
-  // const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
 

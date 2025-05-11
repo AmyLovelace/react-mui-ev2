@@ -4,7 +4,7 @@ import { forwardRef } from "react";
 const Map = forwardRef((props, ref) => {
   
   return (
-    <Container maxWidth="lg" sx={{ my: 5}} ref={ref} >
+    <Container  maxWidth="lg" sx={{ my: 5}} ref={ref} >
       <Grid container spacing={2} justifyContent="center">
         <Grid item xs={12}>
           <Typography variant="h4" gutterBottom align="left" >

@@ -9,6 +9,7 @@ export const ScrollProvider = ({ children }) => {
     Inicio: useRef(null),
     Contacto: useRef(null),
     Mapa: useRef(null),
+    Slider:useRef(null)
   };
 
   const scrollToSection = (id) => {

@@ -1,5 +1,5 @@
 import { Box, ListItem, ListItemButton, ListItemText, Typography, Divider } from "@mui/material";
-import { useEffect, useState, useContext } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { navItems } from "./Config";
 import { listItemStyle } from "../theme";

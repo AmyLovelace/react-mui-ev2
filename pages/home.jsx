@@ -4,18 +4,17 @@ import ContactForm from "../src/components/ContactForm/ContactForm";
 import { useEffect } from "react";
 import { useScrollContext } from "../src/context/ScrollContext";
 import Map from "../src/components/Map/Map";
+import ComunaSlider from "../src/components/ComunaSlider/ComunaSlider";
 
 const Home = () => {
-  const { setActiveSection } = useScrollContext();
-  const { sectionRefs } = useScrollContext();
-
-
+  const { setActiveSection,sectionRefs } = useScrollContext();
 
   useEffect(() => {
     const sections = [
       { id: "Inicio", ref: sectionRefs.Inicio },
       { id: "Contacto", ref: sectionRefs.Contacto },
-      { id: "Mapa", ref: sectionRefs.Mapa }
+      { id: "Mapa", ref: sectionRefs.Mapa },
+      { id: "Comuna", ref: sectionRefs.Slider }
 
     ];
 
@@ -48,18 +47,10 @@ const Home = () => {
     <>
     <Box component={'div'} display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
         <Hero id="Inicio" ref={sectionRefs.Inicio}/>
-      {/* Aquí puedes agregar más contenido o componentes */}
-    
-        {/* <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'} mt={5} mb={5} mx={3}>
-            <h1>Esta es la segunda sección</h1>
-            <p>Este es el contenido de la página de inicio.</p>
-        </Box> */}
-
         <ContactForm id="Contacto" ref={sectionRefs.Contacto}/>
-        <Map  id="Mapa" ref={sectionRefs.Mapa}/>
+        <Map id="Mapa" ref={sectionRefs.Mapa}/>
+        <ComunaSlider id="Slider" ref={sectionRefs.Slider} />
     </Box>
-     
-    
     </>
   );
 }
