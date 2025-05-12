@@ -20,7 +20,7 @@ const cardData = [
   {
     titulo: 'Cultura',
     descripcion: 'Explora nuestra herencia cultural y eventos tradicionales.',
-    imagen: '/assets/cultura.jpg',
+    imagen: '/assets/cultura.jpeg',
   },
   {
     titulo: 'Educación',
@@ -37,9 +37,27 @@ const cardData = [
 const Municipio = forwardRef((props, ref) => {
   return (
     <Container ref={ref}>
-      <Typography variant="body1" paragraph>
-        Bienvenidos al sitio oficial de la Municipalidad de Cholchol. Aquí encontrarás información sobre los servicios, noticias y actividades de nuestra ciudad.
-      </Typography>
+<Typography
+  variant="body1"
+  paragraph
+  sx={{
+    textAlign: 'justify',
+    lineHeight: 1.9,
+    fontSize: '1.1rem',
+    fontWeight: 400,
+    fontFamily: 'Montserrat, sans-serif',
+    textIndent: '2em',
+    backgroundColor: '#f5f5f5',
+    borderLeft: '5px solid #1976d2',
+    padding: '1.2em',
+    borderRadius: '6px',
+    boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
+    color: '#333'
+  }}
+>
+  Bienvenidos al sitio oficial de la Municipalidad de Cholchol. Aquí encontrarás información sobre los servicios, noticias y actividades de nuestra ciudad.
+</Typography>
+
       <Grid container spacing={3}>
         {cardData.map((card, index) => (
           <Grid item xs={12} sm={6} md={4} key={index}>
