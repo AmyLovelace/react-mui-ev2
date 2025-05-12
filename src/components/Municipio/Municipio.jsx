@@ -41,6 +41,8 @@ const Municipio = forwardRef((props, ref) => {
   variant="body1"
   paragraph
   sx={{
+    marginTop: 3,
+    marginBottom: 3,
     textAlign: 'justify',
     lineHeight: 1.9,
     fontSize: '1.1rem',
