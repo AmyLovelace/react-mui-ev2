@@ -4,7 +4,7 @@ import { Container, Typography, Grid, Card, CardContent, CardMedia } from '@mui/
 const cardData = [
   {
     titulo: 'Servicios',
-    descripcion: 'Descubre los servicios que ofrecemos para los ciudadanos de Chonchon.',
+    descripcion: 'Descubre los servicios que ofrecemos para los ciudadanos de Cholchol.',
     imagen: '/assets/servicios.jpg',
   },
   {
@@ -14,7 +14,7 @@ const cardData = [
   },
   {
     titulo: 'Actividades',
-    descripcion: 'Participa en las actividades y eventos organizados en Chonchon.',
+    descripcion: 'Participa en las actividades y eventos organizados en Cholchol.',
     imagen: '/assets/activvidad.jpg',
   },
   {
